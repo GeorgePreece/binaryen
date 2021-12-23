@@ -128,6 +128,10 @@ endif()
 
 # Compiler setup.
 
+# Add Java Native Interface
+find_package(JNI)
+include_directories(${JNI_INCLUDE_DIRS})
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 if(BUILD_LLVM_DWARF)
   include_directories(${CMAKE_CURRENT_SOURCE_DIR}/third_party/llvm-project/include)
