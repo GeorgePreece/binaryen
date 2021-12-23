@@ -6,7 +6,8 @@
 JNIEXPORT jobject JNICALL 
 Java_WebAssembly_test(
     JNIEnv *, 
-    jclass
+    jclass, 
+    jbyteArray
 );
 
 #endif // wasm_binaryen_java_h
