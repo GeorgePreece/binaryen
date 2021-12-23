@@ -329,6 +329,7 @@ endif()
 file(GLOB binaryen_HEADERS src/*.h)
 set(binaryen_SOURCES
   src/binaryen-c.cpp
+  src/binaryen-java.c
   ${binaryen_HEADERS}
 )
 if(BUILD_STATIC_LIB)
